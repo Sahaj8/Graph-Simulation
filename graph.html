@@ -1,0 +1,40 @@
+<html>
+
+<body onload="canvas.setup()">
+
+	<link rel="stylesheet" href="./graphx.css">
+	<div class="graphx">
+
+		<!-- <canvas id="simulationArea" -->
+		<!-- style="position: absolute; left: 0; top: 0; z-index: 0; width:100%;height:100%"></canvas> -->
+		<!-- <canvas id="uiArea" -->
+		<!-- style="position: absolute; left: 0; top: 0; z-index: 1; width:100%;height:100%"></canvas> -->
+		<!-- <canvas id="exportArea" -->
+		<!-- style="position: absolute; left: 0; top: 0; z-index: 2; width:100%;height:100%"></canvas> -->
+		<div style="position: relative; left: 0; top: 10; z-index: 2;">
+			<div style="position: relative;">
+				<div class="toolbar" id="toolbar"  >
+					<button class="button" id="add_node" style="display:show">Add Node</button>
+					<button class="button" id="add_edge">Add Edge</button>
+					<button class="button" id="d_edge" onclick="displayBut()">Directed Edge</button>
+					<button class="button" id="ud_edge">Undirected Edge</button>
+					<button class="button" id="dfs">DFS</button>
+					<button class="button" id="bfs">BFS</button>
+					<button class="button" id="dij">DIJKSTRA</button>
+					<button class="button" id="sh_path">SHORTEST PATH</button>
+					<button class="button" id="reset">RESET</button>
+					<button class="button" id="del">DELETE</button>
+					<button class="button" id="clear">CLEAR</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<canvas id="canvasArea1" style="position: absolute; left: 0; top: 0; z-index: 0; width:100%;height:100%" width="400" height="400"></canvas>
+	<canvas id="canvasArea2" style="visibility: hidden; position: absolute; left: 0; top: 0; z-index: 0; width:100%;height:100%"></canvas>
+
+	<script src="./canvas.js"></script>
+	<script src="./graph.js"></script>
+</body>
+
+</html>
